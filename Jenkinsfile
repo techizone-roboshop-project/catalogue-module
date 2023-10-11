@@ -42,7 +42,7 @@ pipeline {
                 echo "package version: $packageVersion"
             }
         }
-        install pipeline utility steps plugin, if not installed
+        //install pipeline utility steps plugin, if not installed
         stage('Publish Artifact') {
             steps {
                 nexusArtifactUploader(
